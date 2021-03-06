@@ -26,6 +26,8 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<EfStudentDal>().As<IStudentDal>().SingleInstance();
             builder.RegisterType<TypeManager>().As<ITypeService>().SingleInstance();
             builder.RegisterType<EfTypeDal>().As<ITypeDal>().SingleInstance();
+            builder.RegisterType<BookImageManager>().As<IBookImageService>().SingleInstance();
+            builder.RegisterType<EfBookImageDal>().As<IBookImageDal>().SingleInstance();
 
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
 

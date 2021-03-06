@@ -11,5 +11,6 @@ namespace Business.Constants
         public static string ProccessAdded = "Process added";
         public static string StudentAdded = "Student added";
         public static string TypeAdded = "Type added";
+        public static string BookImageLimitExceeded = "So much image for this book.";
     }
 }

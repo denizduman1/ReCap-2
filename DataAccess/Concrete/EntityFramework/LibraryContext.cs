@@ -16,5 +16,6 @@ namespace DataAccess.Concrete.EntityFramework
         public DbSet<Student> Students { get; set; }
         public DbSet<Process> Processes { get; set; }
         public DbSet<Type> Types { get; set; }
+        public DbSet<BookImage> BookImages { get; set; }
     }
 }
