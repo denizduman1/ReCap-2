@@ -96,6 +96,7 @@ namespace Business.Concrete
                 {
                     List<BookImage> bookimage = new List<BookImage>();
                     bookimage.Add(new BookImage { BookId = bookId, ImagePath = path, Date = DateTime.Now });
+                    _bookImageDal.Add(bookimage[0]);
                     return new SuccessDataResult<List<BookImage>>(bookimage);
                 }
             }
